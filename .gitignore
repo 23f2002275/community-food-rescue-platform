@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/food_rescue.db
+backend/celerybeat-schedule*
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
