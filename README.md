@@ -68,7 +68,6 @@ community-food-rescue-platform/
 │   └── index.html
 ├── docs/screenshots/
 ├── .gitignore
-├── GITHUB_4_DAY_PLAN.md
 └── README.md
 ```
 
@@ -179,14 +178,8 @@ Supported list query parameters include `keyword`, `food_type`, `dietary_tag`, `
 - A listing with reservation history is closed or hidden instead of deleted.
 - Reviews are accepted only after collection.
 
-## Running tests
 
-```powershell
-cd backend
-pytest -q
-```
-
-## Optional Celery and Redis setup
+## Celery and Redis setup
 
 Start Redis with Docker:
 
@@ -209,21 +202,3 @@ celery -A celery_worker.celery beat --loglevel=info
 ```
 
 The scheduled task changes active listings to `EXPIRED` after their expiry time.
-
-## Screenshots
-
-Add final screenshots inside `docs/screenshots` before submission:
-
-- Home and browse page
-- Donor dashboard
-- Receiver reservations
-- Admin dashboard
-
-## Submission checklist
-
-- Replace development secret values with environment variables for deployment.
-- Test all three demo roles.
-- Add screenshots.
-- Confirm the repository is public.
-- Confirm the database, virtual environment and cache files are not committed.
-- Follow `GITHUB_4_DAY_PLAN.md` for genuine staged commits.
